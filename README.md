@@ -12,4 +12,5 @@ A simple Horoscope web app created using HTML, CSS, JavaScript, and aztro API.
 <img  height='400' src="https://github.com/arwazkhan189/Horoscope-app/blob/main/demo-images/2.png">
 <img  height='400' src="https://github.com/arwazkhan189/Horoscope-app/blob/main/demo-images/3.jpg">
 <img  height='400' src="https://github.com/arwazkhan189/Horoscope-app/blob/main/demo-images/4.jpg">
+<img  height='400' src="https://github.com/arwazkhan189/Horoscope-app/blob/main/demo-images/5.jpg">
 </code>
