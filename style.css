@@ -1,0 +1,87 @@
+/*body*/
+body
+{
+    background-image: url('./assets/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/*smoothing scroll */
+*{scroll-behavior: smooth;}
+/*scroll bar effect*/
+::-webkit-scrollbar {
+    width: 5px ;
+    background: #141A34;
+    border-radius: 10px;
+    border: 1px solid rgba(245, 245, 245, 0.4);
+}            
+::-webkit-scrollbar-thumb {
+    border-radius: 5px ;
+    background-color: black;
+}
+/*choose your zodic*/
+.heading h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    font-variant: small-caps;
+    color: transparent;
+    background-image: url("./assets/textbg.webp");
+    background-position: center;
+    -webkit-background-clip:text;
+    -moz-background-clip: text;
+    -ms-background-clip:text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+}
+/*zodaic sign */
+#main .col img{
+    width: 200px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 5px  rgba(245, 245, 245, 0.4);
+}
+#main .col img:hover{
+  transform:scale(1.1);
+  transition: .5s ease-in ;
+}
+/*zodaic sign name*/
+#main .col h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    color: transparent;
+    background-image: url("./assets/namebg.webp");
+    background-position: center;
+    -webkit-background-clip:text;
+    -moz-background-clip: text;
+    -ms-background-clip:text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+}
+/*modal */
+ul{
+  list-style: none;
+}
+li{
+  color: #fff;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+li span{
+  color: black;
+  font-style: italic;
+  font-variant: small-caps;
+}
+.modal{
+ background-color: rgba(245, 245, 245, 0.4) !important;
+ height: auto;
+ width: auto;
+}

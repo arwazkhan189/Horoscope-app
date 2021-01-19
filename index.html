@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--style.css link-->
+    <link rel="stylesheet" href="./style.css">
+
+    
+    <!-- jQuery Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <!--aos link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--title with favicon-->
+    <title>Horoscope-App</title>
+    <link rel='icon' href='./assets/icon.jfif' type="icon/images">
+  </head>
+ 
+  <body >
+
+   <!--main screen-->
+    <section id='main' >
+
+      <div class="heading text-center " data-aos="zoom-out"  data-aos-duration="2000">
+        <h2>Choose Your Zodaic Sign</h2>
+      </div>
+
+      <div class="container">
+        <!--row 1-->
+        <div class="row py-1">
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="1000">
+             <a href="#modal" rel="modal:open" onclick='cardclick("aries")'>
+              <img src="./assets/zodiac_symbols/aries.jpg" alt="aries sign" >
+            </a>
+            <h3  class='text-center' >Aries</h3>
+          </div>
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="2000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("taurus")'>
+              <img src="./assets/zodiac_symbols/taurus.jpg" alt="taurus sign">
+            </a>
+            <h3  class='text-center'>Taurus</h3>
+          </div>
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="3000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("gemini")'>
+              <img src="./assets/zodiac_symbols/gemini.jpg" alt="gemini sign">
+            </a>
+            <h3  class='text-center' >Gemini</h3>
+          </div>
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="3000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("cancer")'>
+              <img src="./assets/zodiac_symbols/cancer.jpg" alt="cancer sign">
+            </a>
+            <h3  class='text-center'>Cancer</h3>
+          </div>
+
+        </div>
+
+        <!--row 2-->
+        <div class="row py-1">
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="3000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("leo")'>
+              <img src="./assets/zodiac_symbols/leo.jpg" alt="leo sign">
+            </a>
+            <h3  class='text-center' >Leo</h3>
+          </div>
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="3000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("virgo")'>
+              <img src="./assets/zodiac_symbols/virgo.jpg" alt="virgo sign">
+            </a>
+            <h3  class='text-center' >Virgo</h3>
+          </div>
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="2000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("libra")'>
+              <img src="./assets/zodiac_symbols/libra.jpg" alt="libra sign">
+            </a>
+            <h3  class='text-center' >Libra</h3>
+          </div>
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="1000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("scorpio")'>
+              <img src="./assets/zodiac_symbols/scorpio.jpg" alt="scorpio sign">
+            </a>
+            <h3  class='text-center' >Scorpio</h3>
+          </div>
+
+        </div>
+
+        <!--row 3-->
+        <div class="row py-1">
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="1000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("sagittarius")'>
+              <img src="./assets/zodiac_symbols/sagittarius.jpg" alt="sagittarius sign">
+            </a>
+            <h3  class='text-center' >Sagittarius</h3>
+          </div>
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="2000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("capricorn")'>
+              <img src="./assets/zodiac_symbols/capricorn.jpg" alt="capricorn sign">
+            </a>
+            <h3  class='text-center' >Capricorn</h3>
+          </div>
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="3000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("aquarius")'>
+              <img src="./assets/zodiac_symbols/aquarius.jpg" alt="aquarius sign">
+            </a>
+            <h3  class='text-center' >Aquarius</h3>
+          </div>
+
+          <div class="col text-center" data-aos='zoom-in' data-aos-duration="3000">
+            <a href="#modal" rel="modal:open" onclick='cardclick("pisces")'>
+              <img src="./assets/zodiac_symbols/pisces.jpg" alt="pisces sign">
+            </a>
+            <h3  class='text-center' >Pisces</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--Modal for showing details-->
+    <div id="modal" class="modal">
+      <div class="container">
+        <div class="row justify-content-center">
+            <img src="" width='150' class="img-fulid" id='zodaicimg'>
+        </div>
+        <hr style="border:1px solid black; background-color:black;">
+        <div class="row">
+          <ul>
+            <li>Date : <span id='current_date' ></span></li>
+            <li>Lucky Time : <span id='lucky_time'></span></li>
+            <li>Lucky Number : <span id='lucky_number'></span></li>
+            <li>Color : <span id='color'></span></li>
+            <li>Mood : <span id='mood'></span></li>
+            <li>Description : <span id='description'></span></li>
+          </ul>
+        </div>
+        <hr style="border:1px solid black; background-color:black;" width="50%">
+      </div>
+      <footer id='footer' >
+        <div class="text-center " style="font-weight: bold; color:white;"> 
+          <p>Designed with <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> by <a href="https://arwazkhan.me/" target="_blank" style="color: white; text-decoration:underline;">Arwaz Khan</a></p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>  
+  
+    <!--jquery modal link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <!--aos link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  
+    <!--Main Script.js file-->
+    <script src="./scripts.js"></script>
+  
+  </body>
+</html>
