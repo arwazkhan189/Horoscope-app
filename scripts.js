@@ -68,10 +68,10 @@ function changeimage(zodaicsign){
             zodaicimage.setAttribute("src",`./assets/zodiac_card_images/sagittarius.jpg`);
       }
       else if(zodaicsign=='capricorn'){
-            document.body.style.backgroundImage="url('./assets/zodiac_card_images/capricorn.jpg')";
+            zodaicimage.setAttribute("src",`./assets/zodiac_card_images/capricorn.jpg`);
       }
       else if(zodaicsign=='aquarius'){
-            document.body.style.backgroundImage="url('./assets/zodiac_card_images/aquarius.jpg')";
+            zodaicimage.setAttribute("src",`./assets/zodiac_card_images/aquarius.jpg`);
       }
       else {
             zodaicimage.setAttribute("src",`./assets/zodiac_card_images/pisces.jpg`);
